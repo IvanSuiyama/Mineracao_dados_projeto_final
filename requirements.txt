@@ -1,0 +1,18 @@
+# Ambiente do Projeto Final - Mineracao de Dados com apoio de LLM via API
+# Kernel Jupyter: "Python (Mineracao LLM)"  (nome: mineracao-llm)
+
+# --- Analise de dados ---
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- Notebook ---
+jupyterlab>=4.0
+notebook>=7.0
+ipykernel>=6.29
+
+# --- Integracao LLM via API ---
+openai>=1.40          # SDK compativel com a API do DeepSeek (base_url)
+python-dotenv>=1.0    # carrega a chave do arquivo .env (nunca versionado)

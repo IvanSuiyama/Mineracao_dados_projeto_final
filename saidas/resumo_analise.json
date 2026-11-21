@@ -1,0 +1,346 @@
+{
+  "dataset": "Video Game Sales with Ratings (VGChartz + Metacritic)",
+  "pergunta": "Quais jogos apresentam perfis semelhantes de vendas e avaliação, e quais se afastam do padrão do mercado?",
+  "registros_analisados": 7017,
+  "atributos_usados": [
+    "NA_share",
+    "EU_share",
+    "JP_share",
+    "Other_share",
+    "log_global_sales",
+    "Critic_Score",
+    "User_Score"
+  ],
+  "metodo": "Z-score + distância Euclidiana + K-Means",
+  "k_escolhido": 6,
+  "silhouette": 0.2526,
+  "grupos": [
+    {
+      "grupo": 0,
+      "registros": 1101,
+      "percentual": 15.7,
+      "vendas_medias_milhoes": 0.28,
+      "critica_media_0_100": 49.5,
+      "usuario_medio_0_10": 5.03,
+      "share_NA": 0.697,
+      "share_EU": 0.207,
+      "share_JP": 0.015,
+      "share_Outros": 0.08,
+      "generos_predominantes": [
+        "Action",
+        "Shooter",
+        "Sports"
+      ],
+      "plataformas_predominantes": [
+        "X360",
+        "Wii",
+        "PS2"
+      ],
+      "exemplos": [
+        "Deca Sports",
+        "Game Party",
+        "Zumba Fitness"
+      ]
+    },
+    {
+      "grupo": 1,
+      "registros": 557,
+      "percentual": 7.9,
+      "vendas_medias_milhoes": 0.487,
+      "critica_media_0_100": 71.37,
+      "usuario_medio_0_10": 7.75,
+      "share_NA": 0.234,
+      "share_EU": 0.103,
+      "share_JP": 0.616,
+      "share_Outros": 0.047,
+      "generos_predominantes": [
+        "Role-Playing",
+        "Action",
+        "Fighting"
+      ],
+      "plataformas_predominantes": [
+        "PS2",
+        "PS3",
+        "DS"
+      ],
+      "exemplos": [
+        "Dragon Quest IX: Sentinels of the Starry Skies",
+        "Monster Hunter Freedom Unite",
+        "Dragon Quest VIII: Journey of the Cursed King"
+      ]
+    },
+    {
+      "grupo": 2,
+      "registros": 865,
+      "percentual": 12.3,
+      "vendas_medias_milhoes": 3.59,
+      "critica_media_0_100": 83.43,
+      "usuario_medio_0_10": 7.8,
+      "share_NA": 0.524,
+      "share_EU": 0.311,
+      "share_JP": 0.064,
+      "share_Outros": 0.102,
+      "generos_predominantes": [
+        "Action",
+        "Shooter",
+        "Sports"
+      ],
+      "plataformas_predominantes": [
+        "PS2",
+        "X360",
+        "PS3"
+      ],
+      "exemplos": [
+        "Wii Sports",
+        "Mario Kart Wii",
+        "Wii Sports Resort"
+      ]
+    },
+    {
+      "grupo": 3,
+      "registros": 2022,
+      "percentual": 28.8,
+      "vendas_medias_milhoes": 0.322,
+      "critica_media_0_100": 72.91,
+      "usuario_medio_0_10": 7.74,
+      "share_NA": 0.79,
+      "share_EU": 0.142,
+      "share_JP": 0.019,
+      "share_Outros": 0.048,
+      "generos_predominantes": [
+        "Sports",
+        "Action",
+        "Shooter"
+      ],
+      "plataformas_predominantes": [
+        "XB",
+        "GC",
+        "X360"
+      ],
+      "exemplos": [
+        "Mario Super Sluggers",
+        "Madden NFL 06",
+        "Namco Museum"
+      ]
+    },
+    {
+      "grupo": 4,
+      "registros": 607,
+      "percentual": 8.7,
+      "vendas_medias_milhoes": 0.149,
+      "critica_media_0_100": 74.47,
+      "usuario_medio_0_10": 7.09,
+      "share_NA": 0.036,
+      "share_EU": 0.88,
+      "share_JP": 0.005,
+      "share_Outros": 0.079,
+      "generos_predominantes": [
+        "Action",
+        "Strategy",
+        "Shooter"
+      ],
+      "plataformas_predominantes": [
+        "PC",
+        "PS4",
+        "X360"
+      ],
+      "exemplos": [
+        "Diablo",
+        "Pro Evolution Soccer 2008",
+        "Football Manager 2012"
+      ]
+    },
+    {
+      "grupo": 5,
+      "registros": 1865,
+      "percentual": 26.6,
+      "vendas_medias_milhoes": 0.513,
+      "critica_media_0_100": 71.8,
+      "usuario_medio_0_10": 7.43,
+      "share_NA": 0.439,
+      "share_EU": 0.393,
+      "share_JP": 0.025,
+      "share_Outros": 0.143,
+      "generos_predominantes": [
+        "Action",
+        "Shooter",
+        "Sports"
+      ],
+      "plataformas_predominantes": [
+        "PS2",
+        "PS3",
+        "X360"
+      ],
+      "exemplos": [
+        "Pro Evolution Soccer 2008",
+        "FIFA Soccer 08",
+        "Need for Speed: ProStreet"
+      ]
+    }
+  ],
+  "pares_mais_semelhantes": [
+    {
+      "jogo_a": "The SpongeBob SquarePants Movie",
+      "plataforma_a": "XB",
+      "jogo_b": "Red Dead Revolver",
+      "plataforma_b": "XB",
+      "distancia": 0.0143
+    },
+    {
+      "jogo_a": "Primal",
+      "plataforma_a": "PS2",
+      "jogo_b": "NFL Blitz 20-03",
+      "plataforma_b": "PS2",
+      "distancia": 0.0154
+    },
+    {
+      "jogo_a": "ESPN NHL 2K5",
+      "plataforma_a": "XB",
+      "jogo_b": "SSX Tricky",
+      "plataforma_b": "XB",
+      "distancia": 0.0155
+    },
+    {
+      "jogo_a": "Fullmetal Alchemist 2: Curse of the Crimson Elixir",
+      "plataforma_a": "PS2",
+      "jogo_b": "Legaia 2: Duel Saga",
+      "plataforma_b": "PS2",
+      "distancia": 0.0174
+    },
+    {
+      "jogo_a": "Blazing Angels 2: Secret Missions of WWII",
+      "plataforma_a": "X360",
+      "jogo_b": "Divinity II: The Dragon Knight Saga",
+      "plataforma_b": "X360",
+      "distancia": 0.0194
+    },
+    {
+      "jogo_a": "Godzilla: Save the Earth",
+      "plataforma_a": "XB",
+      "jogo_b": "X-Men: Next Dimension",
+      "plataforma_b": "GC",
+      "distancia": 0.0194
+    },
+    {
+      "jogo_a": "Cold Fear",
+      "plataforma_a": "PS2",
+      "jogo_b": "Nightshade",
+      "plataforma_b": "PS2",
+      "distancia": 0.0198
+    },
+    {
+      "jogo_a": "Tom Clancy's Splinter Cell: Chaos Theory",
+      "plataforma_a": "GC",
+      "jogo_b": "NHL Hitz 20-03",
+      "plataforma_b": "XB",
+      "distancia": 0.0199
+    },
+    {
+      "jogo_a": "LEGO Star Wars II: The Original Trilogy",
+      "plataforma_a": "GBA",
+      "jogo_b": "WWE Crush Hour",
+      "plataforma_b": "GC",
+      "distancia": 0.0203
+    },
+    {
+      "jogo_a": "Alan Wake",
+      "plataforma_a": "PC",
+      "jogo_b": "Torchlight",
+      "plataforma_b": "PC",
+      "distancia": 0.0207
+    }
+  ],
+  "pares_com_perfil_identico_arredondamento": 16,
+  "jogos_mais_atipicos": [
+    {
+      "jogo": "Grand Theft Auto: San Andreas",
+      "plataforma": "PS2",
+      "genero": "Action",
+      "vendas_globais": 20.81,
+      "critica": 95.0,
+      "usuario": 9.0,
+      "dist_media_10_vizinhos": 4.2385
+    },
+    {
+      "jogo": "Gran Turismo 4",
+      "plataforma": "PS2",
+      "genero": "Racing",
+      "vendas_globais": 11.66,
+      "critica": 89.0,
+      "usuario": 8.5,
+      "dist_media_10_vizinhos": 3.623
+    },
+    {
+      "jogo": "Guitar Hero 5",
+      "plataforma": "PS2",
+      "genero": "Misc",
+      "vendas_globais": 1.12,
+      "critica": 71.0,
+      "usuario": 2.6,
+      "dist_media_10_vizinhos": 3.3087
+    },
+    {
+      "jogo": "Sonic the Hedgehog",
+      "plataforma": "PS3",
+      "genero": "Platform",
+      "vendas_globais": 1.16,
+      "critica": 43.0,
+      "usuario": 4.1,
+      "dist_media_10_vizinhos": 2.8634
+    },
+    {
+      "jogo": "The Sims 2: Pets",
+      "plataforma": "PS2",
+      "genero": "Simulation",
+      "vendas_globais": 0.3,
+      "critica": 68.0,
+      "usuario": 8.0,
+      "dist_media_10_vizinhos": 2.7723
+    },
+    {
+      "jogo": "Wii Sports",
+      "plataforma": "Wii",
+      "genero": "Sports",
+      "vendas_globais": 82.53,
+      "critica": 76.0,
+      "usuario": 8.0,
+      "dist_media_10_vizinhos": 2.7701
+    },
+    {
+      "jogo": "Final Fantasy XII",
+      "plataforma": "PS2",
+      "genero": "Role-Playing",
+      "vendas_globais": 5.95,
+      "critica": 92.0,
+      "usuario": 7.6,
+      "dist_media_10_vizinhos": 2.769
+    },
+    {
+      "jogo": "The Golden Compass",
+      "plataforma": "PS2",
+      "genero": "Action",
+      "vendas_globais": 0.52,
+      "critica": 46.0,
+      "usuario": 5.2,
+      "dist_media_10_vizinhos": 2.6965
+    },
+    {
+      "jogo": "Metal Gear Solid 3: Snake Eater",
+      "plataforma": "PS2",
+      "genero": "Action",
+      "vendas_globais": 4.23,
+      "critica": 91.0,
+      "usuario": 9.3,
+      "dist_media_10_vizinhos": 2.6881
+    },
+    {
+      "jogo": "Okami",
+      "plataforma": "PS2",
+      "genero": "Action",
+      "vendas_globais": 0.63,
+      "critica": 93.0,
+      "usuario": 9.3,
+      "dist_media_10_vizinhos": 2.683
+    }
+  ]
+}
