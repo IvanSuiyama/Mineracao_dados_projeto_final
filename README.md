@@ -113,5 +113,11 @@ Cópia pública usada: repositório `dimaggiofrancesco/DATA_ANALYSIS-Videogames_
 
 ### Pendências
 
-- Reescrever a conclusão crítica (rascunho no notebook 03).
-- Exportar o notebook para PDF/HTML na entrega.
+- Revisar o checklist final do PDF antes de entregar.
+- (Opcional) incluir vendas digitais e período mais recente como trabalho futuro.
+
+### Entregáveis (`entrega/`)
+
+- `01_entendimento_e_qualidade.pdf` / `.html`
+- `02_similaridade_e_clusters.pdf` / `.html`
+- `03_llm_interpretacao.pdf` / `.html`
