@@ -116,8 +116,7 @@ Cópia pública usada: repositório `dimaggiofrancesco/DATA_ANALYSIS-Videogames_
 - Revisar o checklist final do PDF antes de entregar.
 - (Opcional) incluir vendas digitais e período mais recente como trabalho futuro.
 
-### Entregáveis (`entrega/`)
+### Entregável
 
-- `01_entendimento_e_qualidade.pdf` / `.html`
-- `02_similaridade_e_clusters.pdf` / `.html`
-- `03_llm_interpretacao.pdf` / `.html`
+- **`entrega/Projeto_Final_Mineracao_Dados_Ivan_Suiyama.pdf`** — documento único com capa,
+  proposta (Entrega 1) e os três notebooks.
