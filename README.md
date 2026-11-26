@@ -119,4 +119,4 @@ Cópia pública usada: repositório `dimaggiofrancesco/DATA_ANALYSIS-Videogames_
 ### Entregável
 
 - **`entrega/Projeto_Final_Mineracao_Dados_Ivan_Suiyama.pdf`** — documento único com capa,
-  proposta (Entrega 1) e os três notebooks.
+  proposta (Entrega 1), os três notebooks e um apêndice com o resumo do processo.
