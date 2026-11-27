@@ -118,5 +118,6 @@ Cópia pública usada: repositório `dimaggiofrancesco/DATA_ANALYSIS-Videogames_
 
 ### Entregável
 
-- **`entrega/Projeto_Final_Mineracao_Dados_Ivan_Suiyama.pdf`** — relatório enxuto (sem código):
-  capa com dados, pergunta e técnicas; Notebook 01, Notebook 02, `llm_client.py` e Notebook 03.
+- **`entrega/Projeto_Final_Mineracao_Dados_Ivan_Suiyama.pdf`** — relatório em 21 páginas, sem código:
+  capa, contexto, kernel Python, Notebook 01, Notebook 02, `llm_client.py`, Notebook 03,
+  verificação das respostas da IA, resposta à pergunta e conclusão.
