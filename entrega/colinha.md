@@ -13,16 +13,30 @@
 
 ## 1. Notebook 01 — Carrega, limpa e prepara
 
-Carrega o dataset bruto (`data/raw/Video_Games.csv`, 16.719 × 16), limpa e gera a base preparada
-(`data/processed/jogos_preparados.csv`).
+Carrega o dataset bruto (`Video_Games.csv`, 16.719 × 16), aplica as técnicas de preparação e gera a base `jogos_preparados.csv`.
 
-**Limpeza feita com:**
-- `pd.to_numeric(..., errors="coerce")` — converte texto e `"tbd"` em número ou ausente (`NaN`);
-- `isna().sum()` / `isna().mean()` — mede os valores ausentes;
-- `duplicated()` / `drop_duplicates()` — identifica e remove duplicados exatos;
-- **IQR** (`quantile` 25/75) — detecta possíveis outliers (**não remove**: eles são o objeto da pergunta);
-- engenharia de atributos — **shares regionais** (venda da região ÷ total regional) e **`log1p(Global_Sales)`**;
-- `dropna(subset=...)` — mantém apenas os registros com os 7 atributos completos.
+**Técnicas utilizadas:**
+- **Verificação de tipos** — identificação de colunas numéricas que vieram como texto.
+- **Conversão de tipos** — números em texto e o valor `"tbd"` são convertidos para número ou ausente.
+- **Análise de valores ausentes** — contagem e percentual de ausência por coluna.
+- **Detecção de duplicidades** — linhas idênticas e jogos repetidos na mesma plataforma.
+- **Detecção de outliers por IQR** — identificação dos valores fora do padrão, sem remoção.
+- **Engenharia de atributos** — participação de cada região nas vendas e transformação logarítmica das vendas.
+- **Seleção de atributos** — escolha dos 7 atributos usados na mineração.
+
+**O que foi removido (e por quê):**
+- **Duplicados exatos** — removidos; no dataset eram zero.
+- **Jogos repetidos de mesmo nome + plataforma** — **mantidos**, pois são edições/relançamentos diferentes.
+- **Registros sem vendas globais ou com venda zero** — removidos, pois não é possível calcular a participação regional dividindo por zero.
+- **Registros sem os 7 atributos completos** — removidos, pois distância e agrupamento exigem dados completos.
+- **Colunas removidas da modelagem:**
+  - `Global_Sales` bruta — substituída pelo log das vendas;
+  - `Critic_Count` e `User_Count` — medem a quantidade de avaliações, não a qualidade;
+  - `Name`, `Platform`, `Genre`, `Publisher`, `Developer` e `Rating` — identificação/categorias, usadas apenas para descrever os grupos.
+
+**O que NÃO foi removido (e por quê):**
+- **Outliers** — são justamente o objeto da pergunta ("quais se afastam do padrão"); apenas medidos.
+- **Valores ausentes** — a ausência é informação da fonte (cobertura do Metacritic) e não foi preenchida artificialmente.
 
 **Resultado:** 7.017 linhas × 22 colunas.
 
